@@ -1,0 +1,57 @@
+
+/*Box-sixing*/
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+/*header styles*/
+header {
+  display: flex;
+  flex-direction: column;
+  background:blue;
+  /*make a background
+  video*/
+}
+
+nav {
+display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+
+}
+
+
+div.navigation {
+
+  background-color: transparent;
+}
+
+div.header {
+
+}
+
+article {
+  background: lightgrey;
+}
+/*Footer styles*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+img.media {
+  width: 20px;
+  height: 20px;
+}
