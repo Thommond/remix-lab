@@ -37,10 +37,17 @@ div.navigation nav ul {
 
 display: flex;
 flex-direction: row;
-justify-content: s
 
 
 }
+
+div.navigation nav ul li  {
+
+padding: 0px 10px;
+
+}
+
+
 
 div.header {
   height: 600px;
@@ -115,6 +122,9 @@ section {
   margin: 30px;
 }
 
+section.safer div {
+float: left;
+}
 section.tono {
 
 }
