@@ -16,29 +16,37 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  background: blue;
+  background-color:tan;
   width: 100%;
   z-index: 50;
+
   /*make a background
   video*/
 }
 
+
 /*div styles*/
 div.navigation {
-  background: lightgrey;
+  background-color: black;
+  opacity: 0.7;
   display: flex;
-  opacity: 0.5;
   display: flex;
   justify-content: space-around;
-  height: 150px;
+  height: 120px;
+  align-items: center;
 }
 
-div.navigation nav ul {
 
-display: flex;
-flex-direction: row;
+div.navigation li a {
+  color:#fff;
+  text-decoration: none;
+  font-family: sans-serif;
+}
 
-
+div.navigation li a:hover {
+  color:orange;
+  border-top: 2px solid red;
+  border-top-style:  ;
 }
 
 div.navigation nav ul li  {
@@ -52,19 +60,23 @@ padding: 0px 10px;
 div.header {
   height: 600px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-    background-image: url(https:/
-      /infantree.com/wp-content/uploads/2016/11/homepage-hero.jpg);
+align-items: center;
+background-image: url(images/video.webm);
 }
 
 div.header h1 {
-  font-size: 65pt;
+  font-size: 80pt;
+  text-align: center;
+  color:white;
+  font-weight: bold;
+  font-family: sans-serif;
+
 
 }
 
 div.graph {
 width: 60%;
+
 }
 div.graph h2 {
   font-size: 27pt;
@@ -76,31 +88,43 @@ div.graph h2 {
 
 
 
+
 div.in {
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 70%;
-  background-color: #fff;
 }
 
 div.out {
   display: flex;
-  justify-content: center;
+  justify-content:flex-end;
   flex-direction: column;
-  width: 30%;
-  height: 500px;
-  opacity: 0.5;
-  background-color: darkgrey;
+  width: 35%;
   padding:5px;
+  height: 450px;
+  background-color: rgba(244, 0, 0, 0.7);
+  background-color: black;
+  padding:5px;
+
 }
 
-div.out:hover {
-background-color: grey;
+section:hover div.out {
+background-color: black;
+background-color: rgba(244, 0, 0, 0.5);
+}
+
+section div.out p  {
+color:#fff;
+}
+
+section div.out h2 {
+  color:#fff
 }
 
 div.out h2 {
   font-size: 27pt;
+  opacity: 0;
 }
 
 div.out p {
@@ -114,29 +138,43 @@ justify-content: center;
 align-items: center;
 margin: 15px;
 }
+
+
+div.out a:hover {
+  color:orange;
+}
 /*section styles*/
 
 section {
-  background:red;
-  padding: 10px;
   margin: 30px;
+
 }
 
-section.safer div {
-float: left;
+section.safer  {
+display: flex;
+justify-content:flex-end;
+background-image: url(images/james.jpg);
+background-size: 100%;
+background-position: center;
 }
 section.tono {
-
+background-image: url(images/john.jpg);
+background-size: 100%;
+background-position: center;
 }
 section.graph {
 width:100%;
 height: 300px;
 background: #fff;
 margin:0;
+ background-image:url("img/mission-bkgd.jpg");
+}
+
+section.graph:last-child img.arrow {
 }
 
 section.novara {
-
+background-image: url(images/bob.jpg);
 }
 
 section.jessica {
@@ -147,7 +185,10 @@ section.jessica {
   background-color: black;
   color:orange;
   margin:0;
+  height: 350px;
 }
+
+
 
 section.jessica p:first-child {
   color:white;
@@ -159,8 +200,11 @@ section.jessica p:first-child {
 section.jessica p:nth-child(2) {
   font-size: 18pt;
   margin: 10px;
+  color:orange;
 }
+section.safer {
 
+}
 
 /*nav styles*/
 nav {}
@@ -221,6 +265,11 @@ a.bob {
   color:black;
   border:1px solid orange;
   padding:10px;
+  font-size: 15pt;
+  font-family: sans-serif;
+  justify-content: space-around;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 a.bob:hover {
   background-color:orange;
@@ -230,4 +279,7 @@ a.two {
   color:grey;
   font-size: 20pt;
 
+}
+a.two:hover {
+color:orange;
 }
