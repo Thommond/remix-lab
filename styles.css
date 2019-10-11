@@ -25,11 +25,14 @@ header {
 }
 
 
+nav {
+  padding-left: 600px;
+}
+
 /*div styles*/
 div.navigation {
   background-color: black;
   opacity: 0.7;
-  display: flex;
   display: flex;
   justify-content: space-around;
   height: 120px;
@@ -74,20 +77,6 @@ div.header h1 {
 
 }
 
-div.graph {
-width: 60%;
-
-}
-div.graph h2 {
-  font-size: 27pt;
-}
-
-div.graph h2 {
-  font-size:
-}
-
-
-
 
 div.in {
   display: flex;
@@ -98,38 +87,35 @@ div.in {
 
 div.out {
   display: flex;
-  justify-content:flex-end;
+  justify-content:center;
   flex-direction: column;
+  align-items: center;
   width: 35%;
   padding:5px;
   height: 450px;
-  background-color: rgba(244, 0, 0, 0.7);
-  background-color: black;
+  background-color: rgba(73, 73, 73, 0.75);
   padding:5px;
 
 }
 
 section:hover div.out {
 background-color: black;
-background-color: rgba(244, 0, 0, 0.5);
+background-color: rgba(73, 73, 73, .8);
 }
 
-section div.out p  {
-color:#fff;
+section div.out p:first-child  {
+font-size: 15pt;
 }
 
-section div.out h2 {
-  color:#fff
+section div.out p {
+  color:#fff;
 }
 
-div.out h2 {
+section div.out p:last-child {
   font-size: 27pt;
   opacity: 0;
 }
 
-div.out p {
-  font-size: 15pt;
-}
 
 div.tom {
 width:100%;
@@ -142,6 +128,21 @@ margin: 15px;
 
 div.out a:hover {
   color:orange;
+}
+
+div.logo {
+  width:250px;
+  height: 250px;
+  position: absolute;
+  left:100px;
+  top:50px;
+
+}
+
+img.arrow {
+  width:100px;
+  height: 50px;
+  padding:15px;
 }
 /*section styles*/
 
@@ -167,10 +168,21 @@ width:100%;
 height: 300px;
 background: #fff;
 margin:0;
- background-image:url("img/mission-bkgd.jpg");
+background-position: center;
+background-size: 100%;
+display: flex;
+flex-direction: column;
+ background-image:url("https://infantree.com/wp-content/themes/infantree/img/mission-bkgd.jpg");
 }
 
-section.graph:last-child img.arrow {
+div.graph {
+  display: flex;
+  flex-direction: column;
+}
+
+section.graph h2 {
+  font-size: 25pt;
+  font-family: sans-serif;
 }
 
 section.novara {
@@ -207,7 +219,6 @@ section.safer {
 }
 
 /*nav styles*/
-nav {}
 
 nav ul {
   list-style-type: none;
@@ -216,7 +227,6 @@ nav ul {
   justify-content:
 }
 
-nav ul li {}
 
 article {
   background: lightgrey;
